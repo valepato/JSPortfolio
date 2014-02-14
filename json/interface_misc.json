@@ -1,0 +1,90 @@
+{
+    "photos": {
+        "photo": 
+        [
+            {
+                "objectType": "imageCard",
+                "childProject": "",
+                "imagePath": "portfolio/images",
+                "category": "interface",
+                "project": "misc",
+                "imageName_lg": "06_celestialExplorer_XL.jpg",
+                "title": "Planetary Recon",
+                "description": "Mockup for a planetary recon system."
+            }, 
+            {
+                "objectType": "imageCard",
+                "childProject": "",
+                "imagePath": "portfolio/images",
+                "category": "interface",
+                "project": "misc",
+                "imageName_lg": "07_analyzer_XL.jpg",
+                "title": "Misc",
+                "description": "Mockup for a multibanded matter analyzer."
+            }, 
+            
+            {
+                "objectType": "imageCard",
+                "childProject": "",
+                "imagePath": "portfolio/images",
+                "category": "interface",
+                "project": "misc",
+                "imageName_lg": "14_kogamu_LG.jpg",
+                "title": "Kogamu",
+                "description": "HUD for Kogamu a multiplayer Facebook game."
+            },
+            {
+                "objectType": "imageCard",
+                "childProject": "",
+                "imagePath": "portfolio/images",
+                "category": "interface",
+                "project": "misc",
+                "imageName_lg": "01_menuconcept_LG.jpg",
+                "title": "Menu Concept 1",
+                "description": "Concept for a spatial main menu."
+            }, 
+
+            {
+                "objectType": "imageCard",
+                "childProject": "",
+                "imagePath": "portfolio/images",
+                "category": "interface",
+                "project": "misc",
+                "imageName_lg": "02_menuconcept_LG.jpg",
+                "title": "Menu Concept 2",
+                "description": "Concept for a spatial main menu."
+            }, 
+            {
+                "objectType": "imageCard",
+                "childProject": "",
+                "imagePath": "portfolio/images",
+                "category": "interface",
+                "project": "misc",
+                "imageName_lg": "03_autodjskin_LG.jpg",
+                "title": "DJ Prototype Skin",
+                "description": "Skin for a MAX DJ prototype."
+            }, 
+            {
+                "objectType": "imageCard",
+                "childProject": "",
+                "imagePath": "portfolio/images",
+                "category": "interface",
+                "project": "misc",
+                "imageName_lg": "04_autodjskin_LG.jpg",
+                "title": "DJ Prototype",
+                "description": "Skin implemented with the MAX patch."
+            }, 
+            {
+                "objectType": "imageCard",
+                "childProject": "",
+                "imagePath": "portfolio/images",
+                "category": "interface",
+                "project": "misc",
+                "imageName_lg": "05_songmix_LG.jpg",
+                "title": "Mix Concpet",
+                "description": "HUD concept for DJ mixing."
+            }
+        ]
+    },
+    "stat": "ok"
+}

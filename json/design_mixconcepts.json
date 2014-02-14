@@ -1,0 +1,183 @@
+{
+    "photos": {
+        "photo": 
+        [
+            {
+                "objectType": "imageCard",
+                "childProject": "",
+                "imagePath": "portfolio/images",
+                "category": "designs",
+                "project": "mixconcepts",
+                "imageName_lg": "01_mix_XL.jpg",
+                "title": "Mix Concepts",
+                "description": "Abstract landscape concept V1."
+            },
+
+            {
+                "objectType": "imageCard",
+                "childProject": "",
+                "imagePath": "portfolio/images",
+                "category": "designs",
+                "project": "mixconcepts",
+                "imageName_lg": "02_mix_XL.jpg",
+                "title": "Mix Concepts",
+                "description": "Abstract landscape concept V2"
+            },
+
+            {
+                "objectType": "imageCard",
+                "childProject": "",
+                "imagePath": "portfolio/images",
+                "category": "designs",
+                "project": "mixconcepts",
+                "imageName_lg": "03_mix_XL.jpg",
+                "title": "Mix Concepts",
+                "description": "Inside a box concept."
+            },
+
+            {
+                "objectType": "imageCard",
+                "childProject": "",
+                "imagePath": "portfolio/images",
+                "category": "designs",
+                "project": "mixconcepts",
+                "imageName_lg": "04_mix_XL.jpg",
+                "title": "Mix Concepts",
+                "description": "Retro throw-back title screen concept."
+            },
+
+            {
+                "objectType": "imageCard",
+                "childProject": "",
+                "imagePath": "portfolio/images",
+                "category": "designs",
+                "project": "mixconcepts",
+                "imageName_lg": "05_mix_XL.jpg",
+                "title": "Mix Concepts",
+                "description": "Retro throw-back main menu concept."
+            },
+
+            {
+                "objectType": "imageCard",
+                "childProject": "",
+                "imagePath": "portfolio/images",
+                "category": "designs",
+                "project": "mixconcepts",
+                "imageName_lg": "06_mix_XL.jpg",
+                "title": "Mix Concepts",
+                "description": "Minimal retro throw-back title screen."
+            },
+
+            {
+                "objectType": "imageCard",
+                "childProject": "",
+                "imagePath": "portfolio/images",
+                "category": "designs",
+                "project": "mixconcepts",
+                "imageName_lg": "07_mix_XL.jpg",
+                "title": "Mix Concepts",
+                "description": "Minimal retro throw-back main menu."
+            },
+
+            {
+                "objectType": "imageCard",
+                "childProject": "",
+                "imagePath": "portfolio/images",
+                "category": "designs",
+                "project": "mixconcepts",
+                "imageName_lg": "08_mix_XL.jpg",
+                "title": "Mix Concepts",
+                "description": "Bright and fun title screen concept."
+            },
+
+            {
+                "objectType": "imageCard",
+                "childProject": "",
+                "imagePath": "portfolio/images",
+                "category": "designs",
+                "project": "mixconcepts",
+                "imageName_lg": "09_mix_XL.jpg",
+                "title": "Mix Concepts",
+                "description": "Bright and fun main menu concept."
+            },
+
+            {
+                "objectType": "imageCard",
+                "childProject": "",
+                "imagePath": "portfolio/images",
+                "category": "designs",
+                "project": "mixconcepts",
+                "imageName_lg": "10_mix_XL.jpg",
+                "title": "Mix Concepts",
+                "description": "Future origami title screen concept."
+            },
+
+            {
+                "objectType": "imageCard",
+                "childProject": "",
+                "imagePath": "portfolio/images",
+                "category": "designs",
+                "project": "mixconcepts",
+                "imageName_lg": "11_mix_XL.jpg",
+                "title": "Mix Concepts",
+                "description": "Earthy, paper title screen concept."
+            },
+
+            {
+                "objectType": "imageCard",
+                "childProject": "",
+                "imagePath": "portfolio/images",
+                "category": "designs",
+                "project": "mixconcepts",
+                "imageName_lg": "12_mix_XL.jpg",
+                "title": "Mix Concepts",
+                "description": "Colorful, paper title screen concept."
+            },
+
+            {
+                "objectType": "imageCard",
+                "childProject": "",
+                "imagePath": "portfolio/images",
+                "category": "designs",
+                "project": "mixconcepts",
+                "imageName_lg": "13_mix_XL.jpg",
+                "title": "Mix Concepts",
+                "description": "Warm, abstract cubes title screen concept."
+            },
+
+            {
+                "objectType": "imageCard",
+                "childProject": "",
+                "imagePath": "portfolio/images",
+                "category": "designs",
+                "project": "mixconcepts",
+                "imageName_lg": "14_mix_XL.jpg",
+                "title": "Mix Concepts",
+                "description": "Cool, abstract cubes title screen concept."
+            },
+
+            {
+                "objectType": "imageCard",
+                "childProject": "",
+                "imagePath": "portfolio/images",
+                "category": "designs",
+                "project": "mixconcepts",
+                "imageName_lg": "15_mix_XL.jpg",
+                "title": "Mix Concepts",
+                "description": "Abstract drum machine notation concept V1."
+            },
+
+            {
+                "objectType": "imageCard",
+                "childProject": "",
+                "imagePath": "portfolio/images",
+                "category": "designs",
+                "project": "mixconcepts",
+                "imageName_lg": "16_mix_XL.jpg",
+                "title": "Mix Concepts",
+                "description": "Abstract drum machine notation concept V2."
+            }
+        ]
+    },
+    "stat": "ok"
+}

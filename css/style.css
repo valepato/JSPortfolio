@@ -1,0 +1,550 @@
+/**
+ * Portfolio Site
+ *  
+ *  Author: David Duckworth
+ *	http://www.dlduckworth.com
+ * 	valepato@gmail.com   
+ */
+
+
+html {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    font-family: helvetica, arial, sans-serif;
+    font-size: 13px;
+}
+
+/*---------------------------------------------------*/
+
+@font-face {
+    font-family: 'DezenProRegular';
+    src: url('../webfonts/26B594_0_0.eot');
+    src: url('../webfonts/26B594_0_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/26B594_0_0.woff') format('woff'),url('../webfonts/26B594_0_0.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Museo-500';
+    src: url('../webfonts/26D0ED_1_0.eot');
+    src: url('../webfonts/26D0ED_1_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/26D0ED_1_0.woff') format('woff'),url('../webfonts/26D0ED_1_0.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Lintel-Regular';
+    src: url('../webfonts/26ECBA_0_0.eot');
+    src: url('../webfonts/26ECBA_0_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/26ECBA_0_0.woff') format('woff'),url('../webfonts/26ECBA_0_0.ttf') format('truetype');
+}
+
+.DezenProRegular {
+    font-family: 'DezenProRegular';
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.DezenProRegular.bigHeaderText {
+    font-size: 280px;
+    color: #14151C;
+    text-align: center;
+    text-shadow: 0px -1px 0px rgba(148,159,168, 0.5),
+    0px 10px 5px rgba(17,20,22, 0.5); 
+}
+
+.verySmall {
+    font-size: 20px;
+}
+
+.small {
+    font-size: 25px;
+}
+
+.medium {
+    font-size: 28px;
+}
+
+.large {
+    font-size: 42px;
+}
+
+.headline {
+    font-size: 62px;
+}
+
+.LintelRegular {
+    font-family: 'Lintel-Regular';
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*-------------------- Preloader ----------------------*/
+
+#preloader {
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:#fff; /* change if the mask should have another color then white */
+    z-index:99999; /* makes sure it stays on top */
+}
+
+#status {
+    -webkit-animation: loadingSpinner 1s infinite linear;
+    -moz-animation: loadingSpinner 1s infinite linear;
+    width:200px;
+    height:200px;
+    position:absolute;
+    left:50%; /* centers the loading animation horizontally one the screen */
+    top:50%; /* centers the loading animation vertically one the screen */
+    background-image:url(../images/loader.png); /* path to your loading animation */
+    background-repeat:no-repeat;
+    background-position:center;
+    margin:-100px 0 0 -100px; /* is width and height divided by two */
+}
+
+#loadText {
+  width:200px;
+  height:200px;
+  font-family: 'DezenProRegular';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  text-align: center;
+  position: absolute;
+  left:50%; /* centers the loading animation horizontally one the screen */
+  top:50%; /* centers the loading animation vertically one the screen */
+  margin-left: -100px;
+  margin-top: 60px;
+  color: #b4c2d4;
+  z-index: 99999;
+}
+
+/*---------------------------------------------------*/
+
+#warningPopup { 
+    background-color: #282C3D;
+    border-radius: 15px;
+    color: #000;
+    display: none; 
+    padding: 20px;
+    min-width: 400px;
+    max-width: 500px;
+    min-height: 180px;
+    max-height: 400px;
+}
+
+#videoPopup { 
+    width: 720px;
+    height: 406px;
+    background-color: #282C3D;
+    border-radius: 15px;
+    color: #000;
+    display: none; 
+    padding: 40px;
+}
+
+.modalButton {
+  height: 35px;
+  background-color: #F15A24;
+  border-style: none;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  font-size: 20px;
+  color: #282C3D;
+}
+
+.b-close.DezenProRegular.medium {
+    cursor:pointer;
+    position:absolute;
+    right:10px;
+    top:5px;
+}
+
+.b-close:hover {
+  color: #F15A24;
+}
+
+/*---------------------------------------------------*/
+
+#home { 
+	height: 2000px; 
+	margin: 0 auto; 
+  width: 100%; 
+  max-width: 1920px; 
+  position: relative;
+}
+
+#about { 
+	height: 2000px;
+	margin: 0 auto; 
+  width: 100%; 
+  max-width: 1920px; 
+  position: relative;  
+}
+
+#portfolio { 
+	height: 2000px;
+	margin: 0 auto; 
+  width: 100%; 
+  max-width: 1920px; 
+  position: relative; 
+}
+
+#me { 
+  height: 2000px;
+  margin: 0 auto; 
+  width: 100%; 
+  max-width: 1920px; 
+  position: relative;
+}
+
+
+/*---------------------------------------------------*/
+
+#mainMenu {
+  width: 100%;
+  top: 575px;
+  left: 50%;
+  position:relative;
+  z-index: 900;
+  pointer-events:none;
+}
+
+.menu-bar {
+  margin: 0px 0px 0px 0px;
+  padding: 6px 6px 0px 6px;
+  line-height: 100%;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  box-shadow: 2px 2px 3px #000000;
+  -webkit-box-shadow: 2px 2px 3px #000000;
+  -moz-box-shadow: 2px 2px 3px #000000;
+  background: #282C3D;
+  background: linear-gradient(top,  rgba(70, 76, 107, .75),  rgba(40, 44, 61, .75));
+  background: -ms-linear-gradient(top,  rgba(70, 76, 107, .75),  rgba(40, 44, 61, .75));
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(70, 76, 107, .75)), to(rgba(40, 44, 61, .75)));
+  background: -moz-linear-gradient(top,  rgba(70, 76, 107, .75),  rgba(40, 44, 61, .75));
+  position:relative;
+  pointer-events:visible;
+  z-index:999;
+}
+.menu-bar.top {
+  width: 850px;
+  height: 38px;
+  left: -425px;
+  border-radius: 15px;
+}
+.menu-bar li {
+  margin: 0px 6px 0px 6px;
+  padding: 0px 0px 6px 0px;
+  float: left;
+  position: relative;
+  list-style: none;
+}
+.menu-bar a {
+  font-family: 'Museo-500';
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  font-size: 29px;
+  color: #0D151F;
+  text-align: center;
+  text-shadow: 0px 1px 0px rgba(115,122,127, 0.5); 
+  display: block;
+  padding: 10px 20px 10px 20px;
+  margin: 0;  
+}
+.menu-bar a:hover {
+  color: #B0DCF4;
+  text-shadow: 0px 1px 0px rgba(23,25,33, 0.8), 0px 0px 10px #B0DCF4; 
+  text-decoration: none;
+}
+
+.menu-bar-selected a {
+  color: #6CB5E4;
+  text-shadow: 0px 1px 0px rgba(23,25,33, 0.8), 0px 0px 10px #6CB5E4; 
+  text-decoration: none; 
+}
+
+.menu-bar {
+  display: inline-block;
+}
+
+/*---------------------------------------------------*/
+
+.galleryNav {
+  background: transparent url(../images/galleryIconBkgd.png) center center no-repeat;
+  width: 300px;
+  height: 300px;
+  margin: 0px 0px 0px 0px;
+  position:relative;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  z-index:500;
+}
+
+.galleryNav.gallery-fadeOut {
+  -webkit-animation: gallery-fadeOut 1s ease-out;
+  -moz-animation: gallery-fadeOut 1s ease-out;
+  visibility: hidden;
+}
+
+.galleryNav.gallery-fadeIn {
+  -webkit-animation: gallery-fadeIn 1s ease-in;
+  -moz-animation: gallery-fadeIn 1s ease-in;
+  visibility: visible;
+}
+
+.galleryNavButton {
+  left:0px;
+  top: 125px;
+  font-family: 'DezenProRegular';
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  font-size: 29px;
+  color: #F14143;
+  text-align: center;
+  vertical-align: middle;
+  text-shadow: 0px 1px 0px rgba(0,0,0, 0.5); 
+  padding: 10px 20px 10px 20px;
+  margin: 0; 
+  position: relative; 
+  opacity: 1;
+}
+
+.galleryNavButton:hover{
+  color: #F18788;
+
+}
+
+/*---------------------------------------------------*/
+
+.aboutMe {
+  width: 902px;
+  height: 653px;
+  left: 50%;
+  margin-left: 185px;
+  position: relative;
+  /*outline: 1px solid;
+  outline-color: #666666;*/
+  z-index: 500;
+}
+
+.aboutColumn {
+  height: 202px;
+  top: 50%;
+  margin: 8px 8px 8px 8px;
+  position: relative;
+  border-radius: 15px;
+  background-color: rgba(40, 44, 61, .55);
+  /*outline: 1px solid;
+  outline-color: #666666;*/
+  opacity: 1;
+  vertical-align: middle;
+}
+
+.aboutColumn.smallColumn {
+  width: 349px;
+  float: left;
+}
+
+.aboutColumn.largeColumn {
+  width: 902px;
+  /*text-align: center;*/
+}
+
+.aboutContent {
+  height: 170px;
+  margin: 32px 32px 32px 32px;
+  position: relative;
+  vertical-align: middle;
+  /*outline: 1px solid;
+  outline-color: #ff0000;*/
+}
+
+.aboutContent.small {
+  width: 317px;
+}
+
+.aboutContent.large {
+  width: 870px;
+}
+
+.aboutLink {
+  border-style: none;
+  width: 100%;
+  height: 100%;
+  opacity: .5;
+}
+
+.aboutLink.linkOne {
+  background: transparent url(../images/emailIcon.png) center center no-repeat;
+  width: 80px;
+  height: 80px;
+  margin: 40px 63px;
+}
+
+.aboutLink.linkTwo {
+  background: transparent url(../images/resumeIcon.png) center center no-repeat;
+  width: 80px;
+  height: 80px;
+  margin: 40px 63px;
+
+}
+
+.aboutLink.linkThree {
+  background: transparent url(../images/linkedInIcon.png) center center no-repeat;
+  width: 80px;
+  height: 80px;
+  margin: 40px 63px;
+}
+
+.aboutLink.linkFour {
+  background: transparent url(../images/archiveIcon.png) center center no-repeat;
+  width: 80px;
+  height: 80px;
+  margin: 40px 63px;
+}
+
+.aboutLink:hover {
+  opacity: 1;
+}
+
+/*---------------------------------------------------*/
+
+html[xmlns] #menu-bar {
+  display: block;
+}
+* html #menu-bar {
+  height: 1%;
+}
+
+/*---------------------------------------------------*/
+
+/* foreground (ballons/landscape) */
+#parallax-bg3 {
+    z-index: 3;
+    position: fixed;
+    left: 50%; /* align left edge with center of viewport */
+    top: 0;
+    width: 940px;
+    margin-left: -470px; /* move left by half element's width */
+    }
+    /* balloon */
+    #bg3-1 {
+        position: absolute;
+        top: 250px;
+        left: 70px;
+        }
+    #bg3-3 {
+        position: absolute;
+        top: 1628px;
+        left: 403px;
+        }
+    #bg3-4 {
+        position: absolute;
+        top: 2000px;
+        left: -100px;
+        }
+/* midground (clouds) */
+#parallax-bg2 {
+    z-index: 2;
+    position: fixed;
+    left: 50%; /* align left edge with center of viewport */
+    top: 0;
+    width: 1200px;
+    height: 900px;
+    margin-left: -600px; /* move left by half element's width */
+    }
+    #bg2-1 {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        }
+    #bg2-2 {
+        position: absolute;
+        top: 2000px;
+        left: -10px;
+        }
+    #bg2-3 {
+        position: absolute;
+        top: 1650px;
+        left: 530px;
+        }
+    #bg2-4 {
+        position: absolute;
+        top: 1180px;
+        left: 250px;
+        }
+    #bg2-5 {
+        position: absolute;
+        top: 900px;
+        left: 890px;
+        }
+    #bg2-6 {
+        position: absolute;
+        top: 3350px;
+        left: 450px;
+        }
+    #bg2-7 {
+        position: absolute;
+        top: 4659px;
+        left: -39px;
+        }
+/* background (clouds) */
+#parallax-bg1 {
+    z-index: 1;
+    position: fixed;
+    left: 50%; /* align left edge with center of viewport */
+    top: 0;
+    width: 1920px;
+    margin-left: -960px; /* move left by half element's width */
+    }
+    #bg1-1 {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        }
+    #bg1-2 {
+        position: absolute;
+        top: 1000px;
+        left: 0px;
+        }
+    #bg1-3 {
+        position: absolute;
+        top: 2000px;
+        left: 0px;
+        }
+    #bg1-4 {
+        position: absolute;
+        top: 3000px;
+        left: 0px;
+        }
+    
+
+/*---------------------------------------------------*/
+
+.parallax-layer {
+    position: absolute;
+}
+
+#port {
+  margin-left: -100px;
+}
+
+
+
+
+
